@@ -21,17 +21,23 @@ A conversational agent that augments OpenAI's GPT model with long-term memory us
 LLM Memory Agent (type 'exit' to quit)
 You: I use Shram and Magnet as productivity tools
 Memory stored: I use Shram and Magnet as productivity tools
+Retrieved context: ['i use shram and magnet as productivity tools.']
+GPT: That's great! I'll remember that you use Shram and Magnet as your productivity tools. How can I assist you with them?
 
 You: What are the productivity tools that I use?
-Retrieved context: ['I use Shram and Magnet as productivity tools']
-GPT: You use Shram and Magnet as productivity tools.
+Memory stored: what productivity tools do i use?
+Retrieved context: ['what productivity tools do i use?', 'i use shram and magnet as productivity tools.']
+GPT: You use Shram and Magnet as your productivity tools.
 
 You: I don't use Magnet anymore
-Memory deleted: ['I use Shram and Magnet as productivity tools']
+Memory stored: I don't use Magnet anymore.
+Retrieved context: ["I don't use Magnet anymore.", 'i use shram and magnet as productivity tools.', 'what productivity tools do i use?']
+GPT: You use Shram as your productivity tool.
 
 You: What are the productivity tools that I use?
-Retrieved context: []
-GPT: I'm not sure what productivity tools you use.
+Memory stored: what productivity tools do i use?
+Retrieved context: ['what productivity tools do i use?', 'i use shram and magnet as productivity tools.', "I don't use Magnet anymore."]
+GPT: You use Shram as your productivity tool. You previously used Magnet, but you no longer use it.
 
 ```
 
