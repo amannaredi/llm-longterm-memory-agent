@@ -22,21 +22,21 @@ LLM Memory Agent (type 'exit' to quit)
 You: I use Shram and Magnet as productivity tools
 Memory stored: I use Shram and Magnet as productivity tools.
 Retrieved context: ['I use Shram and Magnet as productivity tools.']
-GPT: That's great! I've noted that you use Shram and Magnet as your productivity tools. How can I assist you further with these tools?
+GPT: Sure, I have noted that you use Shram and Magnet as your productivity tools. How can I assist you with them?
 
-You: What are the productivity tools that I use?
-Memory stored: what productivity tools do i use?
+You: What productivity tools do I use. 
 Retrieved context: ['I use Shram and Magnet as productivity tools.']
 GPT: You use Shram and Magnet as your productivity tools.
 
-You: I don't use Magnet anymore
-Deleted memories: ['I use Shram and as productivity tools.']
-Retrieved context: ['I use Shram and as productivity tools.']
-GPT: Understood, I will update your information. You no longer use Magnet as a productivity tool.
+You: I don't use Magent anymore.
+Memory stored: I don't use Magent anymore.
+Noted deletion: Magent
+Retrieved context: ["I don't use Magent anymore.", 'I use Shram and Magnet as productivity tools.']
+GPT: Understood, you no longer use Magent. You currently use Shram and Magnet as your productivity tools.
 
 You: What productivity tools do I use?
-Retrieved context: ['I use Shram and as productivity tools.']
-GPT: You use Shram as your productivity tool.
+Retrieved context: ['I use Shram and Magnet as productivity tools.', "I don't use Magent anymore."]
+GPT: You use Shram as a productivity tool.
 
 ```
 
