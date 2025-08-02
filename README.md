@@ -129,12 +129,12 @@ Here are some ways this project can be further improved:
  - Using user intent classification to determine when to search memory.
 
 **3. Smarter Deletion Logic**
- - Instead of soft deletion via GPT filtering, you can:
+Instead of soft deletion via GPT filtering, we can:
  - Implement soft tags (e.g., “deprecated”) on documents and filter them during retrieval.
  - Allow GPT to not just mark but semantically rewrite outdated memories.
 
 **4. Web or Chatbot Interface**
- - Integrate the memory agent into:
+Integrate the memory agent into:
  - A Streamlit or Flask web app for interactive demos.
  - Messaging platforms like Slack, Telegram, or Discord via their respective APIs.
 
