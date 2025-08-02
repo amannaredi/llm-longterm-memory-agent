@@ -105,7 +105,7 @@ Component	Purpose
  - **gpt_response()**	Combines user query + memory + forget notes for GPT-4 response
 
 ## Requirements
- - Python 3.8+
+ - Python
  - openai
  - chromadb
  - python-dotenv
