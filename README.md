@@ -42,17 +42,18 @@ GPT: You use Shram as a productivity tool.
 ```
 
 ## Project Structure
+```
 llm-longterm-memory-agent/
-
 │
-├── main.py # Conversation loop
-├── memory_store.py # ChromaDB memory operations
-├── openai_wrapper.py # GPT logic and deletion target extraction
-├── extractor.py # Semantic memory/deletion intent checks
-├── .env #  OpenAI API key (not pushed!)
-├── requirements.txt # Python dependencies
-├── environment.yml # Conda environment (optional)
-└── README.md 
+├── main.py             # Conversation loop
+├── memory_store.py     # ChromaDB memory operations
+├── openai_wrapper.py   # GPT logic and deletion target extraction
+├── extractor.py        # Semantic memory/deletion intent checks
+├── .env                # OpenAI API key (not pushed!)
+├── requirements.txt    # Python dependencies
+├── environment.yml     # Conda environment (optional)
+└── README.md
+```
 
 ## Getting Started
 
