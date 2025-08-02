@@ -4,7 +4,7 @@ A memory-augmented chatbot system built with OpenAI's GPT-4 and ChromaDB, design
 
 ---
 
-## ✨ Features
+## Features
 
 - **Semantic Memory Detection**: Automatically determines if a message contains information worth remembering using GPT.
 - **Contextual Retrieval**: Fetches semantically similar past memories for the current user query.
