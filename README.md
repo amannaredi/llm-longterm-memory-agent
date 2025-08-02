@@ -43,6 +43,7 @@ GPT: You use Shram as a productivity tool.
 
 ## Project Structure
 llm-longterm-memory-agent/
+
 │
 ├── main.py # Conversation loop
 ├── memory_store.py # ChromaDB memory operations
