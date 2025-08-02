@@ -115,3 +115,41 @@ Component	Purpose
  - ChromaDB
  - text-embedding-3-small
 
+## Future Improvements
+Here are some ways this project can be further improved:
+
+**1. Persistent Memory Storage**
+Currently, memory exists only in-memory and is lost when the app exits. To support real long-term memory:
+
+Enable persistent storage in ChromaDB using persist_directory and chroma_client.persist().
+
+This would allow memories to persist across sessions and system restarts.
+
+**2. Smarter Memory Management**
+To avoid bloating the memory with irrelevant information:
+
+Implement memory deduplication to prevent storing repeated facts.
+
+Introduce a relevance score or decay mechanism to phase out less useful memories over time.
+
+**3. Improved Context Retrieval**
+Currently, we retrieve top-N similar memories. This can be made more intelligent by:
+
+Fine-tuning similarity scoring (e.g., weighted embeddings or hybrid retrieval with keywords).
+
+Using user intent classification to determine when to search memory.
+
+**4. Smarter Deletion Logic**
+Instead of soft deletion via GPT filtering, you can:
+
+Implement soft tags (e.g., “deprecated”) on documents and filter them during retrieval.
+
+Allow GPT to not just mark but semantically rewrite outdated memories.
+
+**5. Web or Chatbot Interface**
+Integrate the memory agent into:
+
+A Streamlit or Flask web app for interactive demos.
+
+Messaging platforms like Slack, Telegram, or Discord via their respective APIs.
+
